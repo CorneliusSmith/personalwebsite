@@ -1,6 +1,8 @@
 @import "bootstrap-4.5.0/scss/vendor/_rfs.scss";
+@import "bootstrap-4.5.0/scss/bootstrap.scss";
 
-body{
+  $highlight:rgb(45, 224, 255);
+  body{
     background-color: #0B132B;
   }
   
@@ -53,7 +55,27 @@ body{
     text-transform: uppercase;
     font-weight: 700;
   }
+
+  .aboutmeTitle{
+    padding-left: 1rem;
+    padding-top: 1vh;
+    font-family: Quicksand, sans-serif;
+    @include font-size(2rem);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
   
+  .aboutmeSubtitle{
+    padding-left: 1rem;
+    padding-top: 1vh;
+    font-family: Quicksand, sans-serif;
+    @include font-size(4rem);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
   .projectTech{
     padding-left: 1rem;
     font-family: Quicksand, sans-serif;
@@ -72,8 +94,20 @@ body{
     width:75vw;
   }
   
+  .aboutmeDescription{
+    padding-left: 1rem;
+    font-family: Quicksand, sans-serif;
+    @include font-size(1.5rem);
+    color: #fff;
+    font-weight: 500;
+    width:75vw;
+  }
   .employer{
-    color: #6FFFE9;
+    color: $highlight;
+  }
+
+  .highlight{
+    color: $highlight;
   }
   
   .cardTitle{
@@ -93,5 +127,10 @@ body{
   .section{
     height: 100vh;
   }
+
+
+.btn-outline-primary {
+    @include button-outline-variant($highlight);
+}
   
   
