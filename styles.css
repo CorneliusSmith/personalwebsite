@@ -1,21 +1,23 @@
-body{
+body {
   background-color: #0B132B;
 }
 
-.border-spacer{
-	border-bottom-style: solid;
-	border-bottom-width: 5px;
-	border-bottom-color: #c21829;
+.border-spacer {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #c21829;
 }
 
-.header{
-	border-style: solid;
-	border-color: white;
-	padding: 3px;
-	align-self: center;
+.header {
+  border-style: solid;
+  border-color: white;
+  padding: 3px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.projectContainer { 
+.projectContainer {
   position: relative;
 }
 
@@ -34,61 +36,64 @@ body{
   height: 100%;
   width: 100%;
   opacity: 0;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
-  background: rgba(0,0,0,0.7)
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .projectContainer:hover .overlay {
   opacity: 1;
 }
 
-.projectTitle{
+.projectTitle {
   padding-left: 1rem;
-  padding-top: 1rem;
+  padding-top: 1vh;
   font-family: Quicksand, sans-serif;
-  @include font-size(16px);
+  font-size: 4vw;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.projectTech{
+.projectTech {
   padding-left: 1rem;
   font-family: Quicksand, sans-serif;
   font-size: 2vw;
   color: #fff;
   font-weight: 700;
-  width:50vw;
+  width: 50vw;
 }
 
-.projectDescription{
+.projectDescription {
   padding-left: 1rem;
   font-family: Quicksand, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #fff;
   font-weight: 500;
-  width:75vw;
+  width: 75vw;
 }
 
-.employer{
+.employer {
   color: #6FFFE9;
 }
 
-.cardTitle{
+.cardTitle {
   background-color: #3A506B;
 }
 
-.cardBody{
+.cardBody {
   background-color: #1C2541;
 }
-.position{
+
+.position {
   color: #CCD7F5;
 }
-.experienceList{
+
+.experienceList {
   color: #8893AF;
 }
 
-.section{
+.section {
   height: 100vh;
 }
-
+/*# sourceMappingURL=styles.css.map */
