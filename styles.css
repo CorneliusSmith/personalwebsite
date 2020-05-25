@@ -11031,7 +11031,6 @@ body {
 .btn-outline-primary {
   color: #2de0ff;
   border-color: #2de0ff;
-  padding-left: 1rem;
 }
 
 .btn-outline-primary:hover {
@@ -11061,5 +11060,78 @@ body {
 .show > .btn-outline-primary.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(45, 224, 255, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(45, 224, 255, 0.5);
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5px;
+}
+
+.aboutColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  overflow: auto;
+}
+
+.aboutImg {
+  max-height: 70vh;
+  max-width: 50vw;
+  border: 3px solid;
+  border-color: #2de0ff;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .aboutColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  .aboutImg {
+    max-height: 50vh;
+    width: 50vh;
+  }
+  .mobileSection {
+    padding-top: 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

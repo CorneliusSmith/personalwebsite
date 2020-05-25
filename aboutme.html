@@ -45,20 +45,113 @@
     </section>
 
     <section class="section">  
-		<div class="d-flex align-items-center justify-content-center w-100 h-50">
-			  <div class="d-flex flex-column pl-3 pr-3">
-				  <h3 class="aboutmeTitle highlight" style="text-transform: none;">About Me </h3>
-				  <p class="aboutmeDescription experienceList w-100"> Recent Graduate from Acadia University and currenty available to hire.</p>
-				  <br>
-				  <br>
-				  <a class="btn btn-outline-primary btn-lg" href="mailto:smithcornelius78@gmail.com" style="width: 250px; padding-left: 1rem;">Contact Me</a>
+		<div class="aboutFlex">
+			<div class="aboutColumn pl-3 pr-3">
+				<h3 class="aboutmeTitle highlight" style="text-transform: none;">About Me </h3>
+				<p class="aboutmeDescription experienceList w-100"> Originally from the Bahamas, I came to Canada to study Computer Science. 
+					I attained my Bachelors of Computer science with a specialization in Software developer in May of 2020.</p>
+				<p class="aboutmeDescription experienceList w-100">I love learning new things and solving problems. Throught my 4 year degree I've gotten the opportunity to hone my craft through School Work, Internships and numerous Side Projects. </p>
+				<br>
+				<br>
+				
+			<!-- <p> When I'm not behind the computer I'm probably exploring hiking trails enjoying a burger from a restaurant near me, or doing a wine tasting at a local vineyard.</p> -->
+			</div>
+			<img src="images/coolsit.jpeg" class="img-fluid aboutImg rounded">
+		</div>
+	</section>
+	<br>
+	<section class="section mobileSection">  
+		<div class="aboutFlex pt-5">
+			<div class="aboutColumn pl-3 pr-3 pt-3">
+				<h3 class="aboutmeTitle highlight" style="text-transform: none;">Experience </h3>
+					<div id="carouselExperience" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExperience" data-slide-to="0" class="active"></li>
+					  		<li data-target="#carouselExperience" data-slide-to="1"></li>
+					  		<li data-target="#carouselExperience" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+					  		<div class="carousel-item active">
+								<div class="card cardBody">
+									<div class="card-header d-flex flex-row cardTitle">
+			  							<div class = "flex-column align-self-end p-3">
+								  			<h3 class="employer">3rDi Lab</h3>
+								  			<h6 class="card-subtitle mb-2 experienceList">October 2019 - March 2020</h6>
+							  			</div> 
+									</div>
+								<div class="card-body">
+									<h5 class="card-title position">Part Time React Native Developer</h5>
+									<p class="card-text experienceList">Wolfville, Nova Scotia, Canada </p>
+									<ul class="experienceList">
+									<li>Started off working on a short project for 3rDi and taught myself React Native in one month to complete it </li>
+									<li>Ported their QR reader android app over to iOS</li>
+									<li>Brought on as part time React Native Developer once the port was complete</li>
+									<li>Portied their Virtual Reality apps to iOS </li>
+									<li>Provided app maintenance and support to all iOS apps</li>
+							  		</ul>
+								</div>
+							</div>
+					  	</div>
+					  	<div class="carousel-item">
+							<div class="card cardBody">
+								<div class="card-header d-flex flex-row cardTitle">
+	 	  							<div class = "flex-column align-self-end p-3">
+										<h3 class="employer">Aliv Telecommunications</h3>
+										<h6 class="card-subtitle mb-2 experienceList">Summer of 2018 & Summer of 2019</h6>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title position">Junior Engineer</h5>
+								 	<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
+									<ul class="experienceList">
+										<li>Assisted in the automation of their licensing department</li>
+										<li>Taught myself Django and developed a website using Django and Python to parse license data</li>
+										<li>My license parser decreased an often 3-5 hour job, to a 1 hour one</li>
+										<li>Provided technical support for over 200,000 subscribers</li>
+										<li>Performed database synchronization, logging errors within the network throughout the nation</li>
+							  		</ul>
+								</div>
+							</div>
+					  	</div>
+					  	<div class="carousel-item">
+							<div class="card cardBody">
+								<div class="card-header cardTitle">
+									<h3 class="employer">Grand Bahamas Airport Company</h3>
+									<h6 class="card-subtitle mb-2 experienceList">Summer of 2017</h6>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title position">Flight Services/Database Management</h5>
+									<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
+									<ul class="experienceList">
+										<li>Recorded flight plans for 80 – 100 movements a day</li>
+										<li>Database reconciliation for entries in a database containing 400,000+ records</li>
+									</ul>
+								</div>
+					  		</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-					
-				<!-- <p> When I'm not behind the computer I'm probably exploring hiking trails enjoying a burger from a restaurant near me, or doing a wine tasting at a local vineyard.</p> -->
+	<section class = section>
+		<div class="d-flex align-items-center justify-content-center w-100 h-75">
+				<div class="d-flex flex-column pl-3 pr-3">
+					<h3 class="aboutmeSubtitle position" style="text-transform: none;"><span class="highlight">Projects</span> </h3>
+					<p class="aboutmeDescription experienceList w-100"> Recent Graduate from Acadia University and currenty available to hire.</p>
+					<br>
+					<br>
+					<a class="btn btn-outline-primary btn-lg" href="mailto:smithcornelius78@gmail.com" style="width: 250px; padding-left: 1rem;">Contact Me</a>
+
+					  
+				  <!-- <p> When I'm not behind the computer I'm probably exploring hiking trails enjoying a burger from a restaurant near me, or doing a wine tasting at a local vineyard.</p> -->
 <!-- 			  		<img src="images/coolsit.jpeg" class="img-fluid w-25" style="transform:rotate(90deg);max-height: 400px;">
 -->		  	</div>
-	</div>
-  </section>
+      </div>
+	</section>
+	
+	  
 		  		<!-- <h3 class="projectTitle" style="color: black">Hobbies</h3>
 		  		<hr>
 		  		<div class="d-flex flex-row justify-content-center">
@@ -71,8 +164,6 @@
 			  		</div>
 		  		</div>-->
 	 
-	  		</div> 
-	  	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
