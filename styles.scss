@@ -192,6 +192,10 @@
     border-color: $highlight;
   }
 
+  .carouselTransition{
+    transition: 0.6s ease-in-out left;
+  }
+
 @media screen and (max-device-width: 800px) {
     .aboutFlex{
         display: flex;
