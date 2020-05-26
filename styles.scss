@@ -28,6 +28,22 @@
     width: 100%;
     height: auto;
   }
+
+  .projectVideo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid;
+    border-color: $highlight;
+  }
+
+  .projectImg {
+    display: block;
+    width: 100%;
+    height: 50%;
+    border: 3px solid;
+    border-color: $highlight;
+  }
   
   .overlay {
     position: absolute;
@@ -50,7 +66,7 @@
     padding-left: 1rem;
     padding-top: 1vh;
     font-family: Quicksand, sans-serif;
-    @include font-size(4vw);
+    @include font-size(4vmin);
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -79,7 +95,7 @@
   .projectTech{
     padding-left: 1rem;
     font-family: Quicksand, sans-serif;
-    @include font-size(2vw);
+    @include font-size(1vmax);
     color: #fff;
     font-weight: 700;
     width:50vw;
@@ -88,10 +104,10 @@
   .projectDescription{
     padding-left: 1rem;
     font-family: Quicksand, sans-serif;
-    @include font-size(1.5vw);
+    @include font-size(1.2vmax);
     color: #fff;
     font-weight: 500;
-    width:75vw;
+    width:90%;
   }
   
   .aboutmeDescription{
@@ -125,9 +141,9 @@
   }
   
   .section{
-    height: 100vh;
+    min-height: 100vh;
   }
-
+  
 
 .btn-outline-primary {
     @include button-outline-variant($highlight);
@@ -142,6 +158,7 @@
     padding-right: 5px;
 }
 
+
 .aboutColumn{
     display:flex;
     flex-direction: column;
@@ -155,18 +172,38 @@
     border: 3px solid;
     border-color: $highlight;
 }
-@media screen and (max-width: 800px) {
+  
+  .fa {
+    padding: 20px;
+    
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-icon {
+    background:  #1C2541;
+    color: $highlight;
+    border: 2px solid;
+    border-color: $highlight;
+  }
+
+@media screen and (max-device-width: 800px) {
     .aboutFlex{
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: start;
+        justify-content: center;
     }
 
     .aboutColumn{
         display:flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-center;
         width: 100%;
     }
 
@@ -174,8 +211,9 @@
         max-height: 50vh;
         width: 50vh;
     }
-    .mobileSection{
-        padding-top: 10%;
-    }
+
+    .section{
+        height: 100vmax;
+      }
   }
   
