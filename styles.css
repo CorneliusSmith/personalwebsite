@@ -11170,4 +11170,16 @@ body {
     width: 50vh;
   }
 }
+
+@media screen and (max-device-width: 800px) and (orientation: landscape) {
+  .projectTitle {
+    font-size: 4vmax;
+  }
+  .projectTech {
+    font-size: 3vmax;
+  }
+  .projectDescription {
+    font-size: 2vmax;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

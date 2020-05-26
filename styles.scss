@@ -215,5 +215,19 @@
         max-height: 50vh;
         width: 50vh;
     }
+    @media (orientation: landscape){
+        .projectTitle{
+            @include font-size(4vmax);
+          }
+
+        .projectTech{
+            @include font-size(3vmax);
+        }
+
+        .projectDescription{
+            @include font-size(2vmax);
+          }
+      }
   }
+
   
