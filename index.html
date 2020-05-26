@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0/dist/css/bootstrap.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <nav class="navbar nav-justified navbar-expand-lg navbar-dark bg-dark">
     	<a class = "navbar-brand" href="#">
@@ -17,9 +18,9 @@
 	    	<span class="navbar-toggler-icon"></span>
   		</button>
 		<div class="collapse navbar-collapse nav-pills flex-row " id="collapsibleNavbar">
-			<a class="nav-link active" href="index.html">Experience</a>
-	    	<a class="nav-link" href="projects.html">Projects</a>
-	    	<a class="nav-link" href="aboutme.html">About Me</a>
+			<a class="nav-link active" href="#aboutme">About Me</a>
+			<a class="nav-link" href="#experience">Experience</a>
+	    	<a class="nav-link" href="#projects">Projects</a>
     	</div>
 
     </nav>
@@ -27,101 +28,198 @@
     <title>Cornelius Smith</title>
   </head>
   <body>
-  
-  		<div class="d-flex p-3 justify-content-center">
-  			<div class="flex-column">
-	  			<div class="card cardBody">
-	  				<div class="card-header d-flex flex-row cardTitle">
-	  					<!-- <img src="images/logo.png" class="img-fluid" alt="3rDi Logo">
--->	  					<div class = "flex-column align-self-end p-3">
-							<h3 class="employer">3rDi Lab</h3>
-							<h6 class="card-subtitle mb-2 experienceList">October 2019 - March 2020</h6>
-						</div> 
-	  				</div>
-	  				<div class="card-body">
-	  					<h5 class="card-title position">Part Time React Native Developer</h5>
-	   					<p class="card-text experienceList">Wolfville, Nova Scotia, Canada </p>
-	   					<ul class="experienceList">
-							<li>Started off working on a short project for 3rDi and taught myself React Native in one month to complete it </li>
-							<li>Ported their QR reader android app over to iOS</li>
-							<li>Brought on as part time React Native Developer once the port was complete</li>
-							<li>Portied their Virtual Reality apps to iOS </li>
-							<li>Provided app maintenance and support to all iOS apps</li>
-						</ul>
-	  				</div>
+  	<section class="section aboutFlex">  
+		<div class="aboutColumn">
+			<h3 class="aboutmeTitle position" style="text-transform: none;">Hi, I'm Cornelius.</h3>
+			<h3 class="aboutmeSubtitle position" style="text-transform: none;"><span class="highlight">I Develop Software.</span> </h3>
+			<p class="aboutmeDescription experienceList w-100"> Recent Graduate from Acadia University and currenty available to hire.</p>
+			<br>
+			<br>
+			<a class="btn btn-outline-primary btn-lg" href="mailto:smithcornelius78@gmail.com" style="width: 250px; padding-left: 1rem;">Contact Me</a>			  
+		</div>
+    </section>
 
-	  			</div>
-	  			<br>
-	  			<div class="card cardBody">
-	  				<div class="card-header d-flex flex-row cardTitle">
-<!-- 	  					<img src="images/alivlogo.jpg" alt="Aliv Logo" style="width: 50px; height: 50px;">
- -->	  					<div class = "flex-column align-self-end p-3">
-	  						<h3 class="employer">Aliv Telecommunications</h3>
-	  						<h6 class="card-subtitle mb-2 experienceList">Summer of 2018 & Summer of 2019</h6>
-	  					</div>
-	  				</div>
-	  				<div class="card-body">
-	  					<h5 class="card-title position">Junior Engineer</h5>
-	   					<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
-	   					<ul class="experienceList">
-							<li>Assisted in the automation of their licensing department</li>
-							<li>Taught myself Django and developed a website using Django and Python to parse license data</li>
-							<li>My license parser decreased an often 3-5 hour job, to a 1 hour one</li>
-							<li>Provided technical support for over 200,000 subscribers</li>
-							<li>Performed database synchronization, logging errors within the network throughout the nation</li>
+    <section class="section aboutFlex" id="aboutme">  
+		<div class="aboutColumn pl-3 pr-3">
+			<h3 class="aboutmeTitle highlight" style="text-transform: none;">About Me </h3>
+			<p class="aboutmeDescription experienceList w-100"> Originally from the Bahamas, I came to Canada to study Computer Science. 
+				I attained my Bachelors of Computer science with a specialization in Software developer in May of 2020.</p>
+			<p class="aboutmeDescription experienceList w-100">I love learning new things and solving problems. Throught my 4 year degree I've gotten the opportunity to hone my craft through School Work, Internships and numerous Side Projects. </p>
+			<br>
+			<br>
+			
+		<!-- <p> When I'm not behind the computer I'm probably exploring hiking trails enjoying a burger from a restaurant near me, or doing a wine tasting at a local vineyard.</p> -->
+		</div>
+		<img src="images/coolsit.jpeg" class="img-fluid aboutImg rounded">
+	</section>
 
-						</ul>
-	  				</div>
-	  		</div>
-
-	  		<br>
-	  			<div class="card cardBody">
-	  				<div class="card-header cardTitle">
-	  					<h3 class="employer">Grand Bahamas Airport Company</h3>
-	  					<h6 class="card-subtitle mb-2 experienceList">Summer of 2017</h6>
-	  				</div>
-	  				<div class="card-body">
-	  					<h5 class="card-title position">Flight Services/Database Management</h5>
-	   					<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
-	   					<ul class="experienceList">
-							<li>Recorded flight plans for 80 – 100 movements a day</li>
-							<li>Database reconciliation for entries in a database containing 400,000+ records</li>
-
-
-						</ul>
-					  </div>
-				
+	<section class="section aboutFlex" id="experience">  
+		<div class="aboutColumn pl-3 pr-3 pt-3">
+			<h3 class="aboutmeTitle highlight" style="text-transform: none;">Experience </h3>
+				<div id="carouselExperience" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExperience" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExperience" data-slide-to="1"></li>
+						<li data-target="#carouselExperience" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card cardBody">
+								<div class="card-header d-flex flex-row cardTitle">
+									<div class = "flex-column align-self-end p-3">
+										<h3 class="employer">3rDi Lab</h3>
+										<h6 class="card-subtitle mb-2 experienceList">October 2019 - March 2020</h6>
+									</div> 
+								</div>
+							<div class="card-body">
+								<h5 class="card-title position">Part Time React Native Developer</h5>
+								<p class="card-text experienceList">Wolfville, Nova Scotia, Canada </p>
+								<ul class="experienceList">
+								<li>Started off working on a short project for 3rDi and taught myself React Native in one month to complete it </li>
+								<li>Ported their QR reader android app over to iOS</li>
+								<li>Brought on as part time React Native Developer once the port was complete</li>
+								<li>Portied their Virtual Reality apps to iOS </li>
+								<li>Provided app maintenance and support to all iOS apps</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card cardBody">
+							<div class="card-header d-flex flex-row cardTitle">
+								<div class = "flex-column align-self-end p-3">
+									<h3 class="employer">Aliv Telecommunications</h3>
+									<h6 class="card-subtitle mb-2 experienceList">Summer of 2018 & Summer of 2019</h6>
+								</div>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title position">Junior Engineer</h5>
+								<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
+								<ul class="experienceList">
+									<li>Assisted in the automation of their licensing department</li>
+									<li>Taught myself Django and developed a website using Django and Python to parse license data</li>
+									<li>My license parser decreased an often 3-5 hour job, to a 1 hour one</li>
+									<li>Provided technical support for over 200,000 subscribers</li>
+									<li>Performed database synchronization, logging errors within the network throughout the nation</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card cardBody">
+							<div class="card-header cardTitle">
+								<h3 class="employer">Grand Bahama Airport Company</h3>
+								<h6 class="card-subtitle mb-2 experienceList">Summer of 2017</h6>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title position">Flight Services/Database Management</h5>
+								<p class="card-text experienceList">Freeport, Grand Bahama, Bahamas </p>
+								<ul class="experienceList">
+									<li>Recorded flight plans for 80 – 100 movements a day</li>
+									<li>Database reconciliation for entries in a database containing 400,000+ records</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<br>
-					  <div class="card cardBody">
-						<div class="card-header cardTitle">
-							<ul class="nav nav-tabs card-header-tabs" id="experience-list" role="tablist">
-								<li class="nav-item">
-								<a class="nav-link active" href="#description" role="tab" aria-controls="description" aria-selected="true">3rDi</a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link"  href="#history" role="tab" aria-controls="history" aria-selected="false">Aliv Telecomm</a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link" href="#deals" role="tab" aria-controls="deals" aria-selected="false">GBAC</a>
-								</li>
-							</ul>
-						</div>
-						<div class="card-body">
-							<h5 class="card-title position">Part Time React Native Developer</h5>
-							 <p class="card-text experienceList">Wolfville, Nova Scotia, Canada </p>
-							 <ul class="experienceList">
-							  <li>Started off working on a short project for 3rDi and taught myself React Native in one month to complete it </li>
-							  <li>Ported their QR reader android app over to iOS</li>
-							  <li>Brought on as part time React Native Developer once the port was complete</li>
-							  <li>Portied their Virtual Reality apps to iOS </li>
-							  <li>Provided app maintenance and support to all iOS apps</li>
-						  </ul>
-						</div>
-	  		</div>
+			</div>
+		</div>
+	</section>
 
-  		</div>
+	<section class ="section aboutFlex" id="projects">
+		<div class="aboutColumn pl-3 pr-3 pt-3">
+			<h3 class="aboutmeTitle highlight" style="text-transform: none; position: relative;">Featured Projects</h3>
+			<div class="projectContainer">
+				<video class="rounded projectVideo" autoplay loop muted playsinline src="videos/delivr.mp4"></video>
+					<div class="overlay">
+						<h3 class="projectTitle">Delivr<h3>
+						<p class = "projectTech">Technology Used - Swift, SwiftUI, SwiftyJSON, Aftership</p>
+						<p class = "projectDescription"> Delivr was built as my final Year Project in my Bachelor of CS. Originally starting out as a fun little project to work on to teach myself Swift, Delivr ended up being made into a full fledged app.</p>
+						<p class = "projectDescription"> With the ability to add packages from all the major carriers throughout Canada, Delivr provides the functionality to track a users package throughout Canada. By integrating Delivr with Apple Maps, Delivr allows to see the exact route their package took while in transit by showcasing the last update from each loaction the package has been at.</p>
+						<p class = "projectDescription"> Boasting a beautiful design, inspired by Apples own stock apps such as Mail, Delivr comes as close to a stock package tracking app as possible.</p>
+				</div>
+			</div>
+			
+			<br>
+			<div class="projectContainer">
+				<video class="rounded projectVideo" autoplay loop muted playsinline src="videos/3rdiVr.mp4"></video>
+					<div class="overlay">
+						<h3 class="projectTitle">3rDi VR<h3>
+							<p class = "projectTech">Technology Used - React Native</p>
+							<p class = "projectDescription"> An app to view 3rDi Labs' Virtual Reality Experiences</p>
+							<p class = "projectDescription">As my second project with 3rDi I was, responsible for porting this App to iOS</p>
+							<p class = "projectDescription"> I implemented the bility to view 3rDi VR experiences on iOS devices and like 3rDiQR, releases 3rDi VR on the appstore. I provided maintenance and support to the app for my tenure at 3rDi.</p>
+				</div>
+			</div>
 
+			<br>
+			<div class="projectContainer">
+				<div class="d-flex flex-row">
+					<img src="images/3rDiQrMain.jpg" class="img-fluid projectImg rounded" alt="3rDiQR">
+				</div>
+				<div class="overlay">
+					<h3 class="projectTitle">3rDi QR<h3>
+					<p class = "projectTech">Technology Used - React Native</p>
+					<p class = "projectDescription"> A short project done for 3rDi Lab to port over their Android app to iOS</p>
+					<p class = "projectDescription">  Starting off with no knowledge of React Native this project introduced me to their codebase and the basic tools used for porting apps to iOS.</p>
+					<p class = "projectDescription">After completing the port I was put in charge of the iOS Developer account, and published the app on the Appstore and pushed a minor version update to address some bugs.</p>
+				</div>
+				</div>
+
+			<br>
+			<div class="projectContainer">
+				<div class="d-flex flex-row">
+					<img src="images/alivParse.jpg" class="img-fluid projectImg rounded" alt="Aliv Parse">
+				</div>
+				<div class="overlay">
+					<h3 class="projectTitle">Aliv Parse<h3>
+					<p class = "projectTech">Technology Used - Python, Django, HTML, CSS, Heroku, AWS</p>
+					<p class = "projectDescription"> A website used to parse out license data built for Aliv Telecomunications</p>
+					<p class = "projectDescription"> During my second summer working for Aliv I was tasked with building an internal tool to parse licences. When I recieved this project I went through requirements gathering with the Engineering team and took the opportunity to learn the web framework Django, as it allows for python to be easily used on the backend to parse out the data. </p>
+					<p class = "projectDescription">This project took what would usually be a 4-5 hour job of pasting licence data into and excel document to one that could be done in thess than 1 hour.</p>
+				</div>
+				</div>
+
+			<br>
+			<div class="projectContainer">
+				<div class="d-flex flex-row">
+					<img src="images/liqloc-L.jpg" class="img-fluid projectImg rounded" alt="Liquor Locator Dark">
+				</div>
+				<div class="overlay">
+					<h3 class="projectTitle">Liquor Locator<h3>
+					<p class = "projectTech">Technology Used - Java, Springboot, Maven, Couchbase, SCSS, Vaadin</p>
+					<p class = "projectDescription"> A group project done to show the location of all establishments with a valid liquor license in Nova Scotia. Using this searchable a user can find a place by name, or establishment type (clubs, pubs, restaurant, etc.). </p>
+					<p class = "projectDescription"> My main role in this project was to be the head UI designer. I was responsible for creating all related design documents, creating mockups for prototyping, implementing our main UI and implementing a dark mode for night time users.</p>
+					<p class = "projectDescription">Having never used SCSS or Vaadin before I got to learn how to use mixins to create dynamic themes for the site.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="d-flex flex-row justify-content-center w-100 pt-5">
+		<div class="d-flex justify-content-around w-25">
+			<a href="mailto:smithcornelius78@gmail.com" class="fa fa-google fa-icon rounded-circle"></a>
+			<a href="https://www.linkedin.com/in/cornelius-smith-9021b7157/" class="fa fa-linkedin fa-icon rounded-circle" target="_blank"></a>
+			<a href="https://github.com/CorneliusSmith" class="fa fa-github fa-icon rounded-circle" target="_blank"></a>
+		</div>
+		
+	</div>
+
+
+	
+	
+	  
+		  		<!-- <h3 class="projectTitle" style="color: black">Hobbies</h3>
+		  		<hr>
+		  		<div class="d-flex flex-row justify-content-center">
+		  			<img src="images/vlado.jpg" class="img-fluid w-50" style="max-height: 400px;">
+  					<div class="flex-column justify-content-center">
+			  			<h3 class="projectTech w-75" style="color: black">Competitive programming</h3>
+			  			<p class="projectDescription w-75" style="color: black"> As one of three members of Acadia Athletics most underated team, I competed in two  International Collegiate Programming Contest (IPCC) rounds.</p>
+			  			<p class="projectDescription w-75" style="color: black">In the 2019 Atlantic Canadian Preliminary Contest the Haxemen Competed against teams from Atlantic Canada and placed 3rd in all of Atlantic Canada. This qualified Us for the North East North Amaerica (NENA) competion.</p>
+			  			<p class="projectDescription w-75" style="color: black">Competing against schools like MIT, Harvard and UofT the Haxemen placed 13th in all of NENA.</p>
+			  		</div>
+		  		</div>-->
+	 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
