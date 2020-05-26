@@ -10897,6 +10897,10 @@ body {
       align-self: center;
 }
 
+.link {
+  color: #2de0ff;
+}
+
 .projectContainer {
   position: relative;
 }
